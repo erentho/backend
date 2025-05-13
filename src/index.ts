@@ -1,1 +1,1 @@
-  console.log('Happy developvding ✨')
+  console.log('Happy developing ✨')
