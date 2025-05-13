@@ -13,5 +13,15 @@
     "prettier": "^3.5.3",
     "typescript": "^5.5.3"
   },
-  "private": true
+  "private": true,
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all",
+    "printWidth": 120,
+    "tabWidth": 2,
+    "endOfLine": "lf"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
 }
