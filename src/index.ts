@@ -7,8 +7,9 @@ server.post('/user/register', (req, res) => {
     res.json({ message: 'Вы пытаетесь войти!' });
     server.post('/user/logout', (req, res) => {
       res.json({ message: 'Вы пытаетесь выйти!' });
-      server.get('/task', (req, res) => {
-        res.json({ message: 'Вы пытаетесь просмотреть список задач!' });
+      server.get('/task/:id', (req, res) => {
+        const taskId = req.params.id;
+        res.json({ message: `Вы пытаетесь прочитать задачу по id= ${req.params.id}` });
       });
     });
   });
