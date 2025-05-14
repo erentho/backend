@@ -9,5 +9,5 @@ yarn-error.log*
 .pnp.js
 
 .vscode/*|
-./.idea
-./node_modules
+.idea
+node_modules
