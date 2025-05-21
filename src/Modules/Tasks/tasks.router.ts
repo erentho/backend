@@ -7,3 +7,7 @@ taskRouter.get('/:id', (req, res) => {
   logger.info ("Task")
   res.json({ message: `Вы пытаетесь прочитать задачу по id= ${taskId}` });
 });
+taskRouter.put('/:id', (req: Request, res: Response) => {
+  const taskId = req.params.id;
+  res.json({ message: `Вы пытаетесь обновить задачу по id=${taskId}` });
+});
