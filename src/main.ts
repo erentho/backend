@@ -1,13 +1,9 @@
 import express from 'express';
 import { logRoutes } from './bootstrap/log-routes';
-import { taskRouter } from './modules/task/tasks.router';
-import { userRouter } from './modules/user/user.router';
 import logger from './pino.logger';
 
 const server = express();
 const port = 2000;
-server.use('/task', taskRouter);
-server.use('/user', userRouter);
 
 logRoutes(server);
 
