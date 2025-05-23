@@ -1,7 +1,7 @@
 import express from 'express';
-import { taskRouter } from './abc/a1/tasks.router';
-import { userRouter } from './abc/a2/user.router';
 import { logRoutes } from './bootstrap/log-routes';
+import { taskRouter } from './modules/task/tasks.router';
+import { userRouter } from './modules/user/user.router';
 import logger from './pino.logger';
 
 const server = express();
